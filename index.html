@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="button.webp">
+        
+    </head>
+    <body>
+        <div id="main_container_flexible">
+            <div id="main_container">
+                <div id="container_img_brief">
+                    <img src="Adventskalender.webp" id="img_brief">
+                    <img src="arrow.webp" id="img_arrow">
+                    <img src="arrow2.webp" id="img_arrow2">
+                    <img src="arrow3.webp" id="img_arrow3">
+               <a href="rezept.html"  id="hyperlink_img">
+                <img src="button.webp" id="img_button_brief" >
+                <img src="shine1.png" id="shine1" >
+                <img src="shine2.png" id="shine2" >
+
+               </a>
+                </div>
+               
+            </div>
+         
+        </div>
+    </body>
+    <style>
+        body{
+            margin: 0px;
+            width: 100%;
+            height: 100vh;
+            background-color: #d1c0a7;
+            background-size: 200px;
+            background-repeat: repeat;
+            overflow-y: hidden;
+        }
+        #main_container_flexible{
+            width: 100%;
+            height: 100vh;
+        }
+        #main_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container_img_brief{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #img_brief{
+            width: 700px;
+        }
+
+        #hyperlink_img{
+            position: absolute;
+            transform: translateX(-8px) translateY(198px);
+            transition: 100ms;
+            width: 69px;
+            
+        }
+        #hyperlink_img:hover{
+            width: 75px;
+
+            animation-delay: 1000ms;
+            /* animation-name: button_animation; */
+            animation-duration: 200ms;
+            
+        } 
+
+        #img_button_brief{
+            width: inherit;
+            height: inherit;
+        }
+
+        #img_arrow{
+            position: absolute;
+            transform: translateX(70px) translateY(198px) rotateZ(-120deg);
+            transition: 200ms;
+            width: 70px;
+            opacity: 0;           
+
+        }
+        #img_arrow2{
+            position: absolute;
+            transform: translateX(-100px) translateY(240px) rotateZ(15deg);
+            transition: 300ms;
+            width: 70px;
+            opacity: 0;           
+        }
+        #img_arrow3{
+            position: absolute;
+            transform: translateX(-90px) translateY(140px) rotateZ(20deg);
+            transition: 250ms;
+            width: 70px;
+            opacity: 0; 
+        }
+
+        #container_img_brief:hover #img_arrow{
+            transform: translateX(63px) translateY(190px) rotateZ(-185deg);
+            opacity: 1;
+        }
+        #container_img_brief:hover #img_arrow2{
+            transform: translateX(-85px) translateY(230px) rotateZ(15deg);
+            opacity: 1;
+        }
+        #container_img_brief:hover #img_arrow3{
+            transform: translateX(-70px) translateY(146px) rotateZ(60deg);
+            opacity: 1;
+        }
+
+        #shine1, #shine2{
+            position: absolute;
+            width: inherit;
+            transform: translateX(-62px) translateY(0px);
+            opacity: 0;
+
+            animation-duration: 3000ms;
+        }        
+
+        @keyframes shine1_animation{
+            0% {opacity: 0;}
+            50% {opacity: 0;}
+            52% {opacity: 0.2;}
+            70% {opacity: 0.2;}
+            100% {opacity: 0;}
+        }
+        @keyframes shine2_animation{
+            0% {opacity: 0;}
+            50% {opacity: 0;}
+            60% {opacity: 0.3;}
+            80% {opacity: 0.4;}
+            100% {opacity: 0;}
+        }
+
+
+        #hyperlink_img:hover #shine1{
+            /* animation-name: shine1_animation; */
+
+        }
+        #hyperlink_img:hover #shine2{
+            /* animation-name: shine2_animation; */
+        }
+
+
+    </style>
+</html>
